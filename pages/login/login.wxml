@@ -6,6 +6,13 @@
 <view class="container">
     <!-- logo图片 -->
     <image class="logo" src="/assets/imgs/ic_launcher.png" />
-    <view class="wechatLogin btn-login">微信登录</view>
-    <view class="doubanLogin btn-login">已有豆瓣帐号登录</view>
+    <view class="wechat btn-login" bind:tap="wechatLogin">微信登录</view>
+    <view class="douban btn-login" bind:tap="doubanLogin">已有豆瓣帐号登录</view>
+
+    <!-- 登录表示同意 豆瓣使用协议/隐私协议 -->
+    <login class="agreement">
+        登录表示同意
+        <view class="protocol" bind:tap="openProtocol">豆瓣使用协议/隐私协议</view>
+    </login>
+
 </view>

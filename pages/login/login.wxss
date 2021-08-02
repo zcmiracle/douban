@@ -1,1 +1,56 @@
 /* pages/login/login.wxss */
+
+.container {
+    /* flex布局 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 上下0，左右30rpx */
+    padding: 0 30rpx;
+}
+
+/* logo图 */
+.logo {
+    width: 144rpx;
+    height: 144rpx;
+    /* 上下30rpx 左右0 */
+    margin: 40rpx 0;
+}
+
+/* 微信登录 & 已有豆瓣帐号登录 共同点 */
+.btn-login {
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 100%;
+    text-align: center;
+    border-radius: 10rpx;
+}
+
+/* 微信登录 */
+.wechat {
+    background-color: #42BD55;
+    color: #fff;
+    margin-bottom: 30rpx;
+}
+
+/* 已有豆瓣帐号登录 */
+.douban {
+    background-color: #fff;
+    color: #42BD55;
+    border: 2rpx solid #42BD55;
+}
+
+/* 登录表示同意 */
+.agreement {
+    color: #9D9D9D;
+    font-size: 24rpx;
+    display: flex;
+    position: absolute;
+    bottom: 50rpx;
+}
+
+/* 豆瓣使用协议/隐私 */
+.agreement .protocol {
+    color: #42BD55;
+    margin-left: 10rpx;
+}
