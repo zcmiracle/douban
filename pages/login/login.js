@@ -1,6 +1,5 @@
 // pages/login/login.js
 Page({
-    
     // 微信登录
     wechatLogin: function() {
         console.log("微信登录");
@@ -14,6 +13,7 @@ Page({
     // 豆瓣使用协议/隐私协议
     openProtocol: function() {
         console.log("豆瓣使用协议/隐私协议");
+        
         wx.navigateTo({
           url: '/pages/agreement/agreement',
         })

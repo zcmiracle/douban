@@ -1,2 +1,15 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+
+<view class="container">
+  <view>
+    <!-- 登录button + 背景包装 -->
+    <view class="login-wrap">
+      <view class="login" bind:tap="login">登录</view>
+      <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill"/>
+    </view>
+
+    <!-- 我的书影音 + 登录查看 > -->  
+    <view></view>
+
+  </view>
+</view>

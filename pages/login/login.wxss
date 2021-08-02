@@ -9,7 +9,7 @@
     padding: 0 30rpx;
 }
 
-/* logo图 */
+/* logo */
 .logo {
     width: 144rpx;
     height: 144rpx;
