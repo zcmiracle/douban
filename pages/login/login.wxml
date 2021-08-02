@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+
+<!-- 导航栏 -->
+<nav-bar title="登录"></nav-bar>
+
+<view class="container">
+    <!-- logo图片 -->
+    <image class="logo" src="/assets/imgs/ic_launcher.png" />
+    <view class="wechatLogin btn-login">微信登录</view>
+    <view class="doubanLogin btn-login">已有豆瓣帐号登录</view>
+</view>
