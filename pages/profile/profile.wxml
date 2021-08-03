@@ -9,7 +9,41 @@
     </view>
 
     <!-- 我的书影音 + 登录查看 > -->  
-    <view></view>
+    <view class="items-wrapper">
+      <view class="title-wrapper">
+        <view class="title">我的书影音</view>
+        <!-- 登录查看 + > -->
+        <view class="loginlook" bind:tap="login">
+          登录查看
+          <view class="arrow"></view>
+        </view>
+      </view>
+
+      <!-- items -->
+      <view class="items">
+        <image class="icon" src="/assets/imgs/ic_cat_movie.png"/>
+        <view class="info-wrapper">
+          <view class="info">
+            <!-- 观影分析 + 0 看过 -->
+            <view class="left">
+              <view class="leftTop"></view>
+              <view class="leftBottom"></view>
+            </view>
+            <!-- 开启10部影片\n开启观影分析 + 立即开启 + > -->
+            <view class="right">
+              <text class="text">开启10部影片\n开启观影分析</text> 
+              <view class="immediatelyOpen">立即开启</view>
+              <view class="arrow"></view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+
+      <!-- 版本1.0.2 -->
+      <view class="version">版本1.0.2</view>
+  
+  </view>
 
   </view>
 </view>
