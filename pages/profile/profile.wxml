@@ -35,7 +35,7 @@
             <!-- 开启10部影片\n开启观影分析 + 立即开启 + > -->
             <view class="right">
               <text class="text">开启10部影片\n开启观影分析</text> 
-              <view class="right-wrapper">  
+              <view class="open-wrapper">  
                 <view class="immediatelyOpen">立即开启</view>
                 <view class="arrow"></view>
               </view>

@@ -37,7 +37,7 @@ page {
     color: #1E4826;
     background-color: #fff;
     border-radius: 50rpx;
-    font-size: 40rpx;
+    font-size: 42rpx;
     height: 100rpx;
     line-height: 100rpx;
     width: 350rpx;
@@ -62,7 +62,7 @@ page {
 
 /* 我的书影音 + 登录查看 */
 .title-wrapper {
-    background-color: #f00;
+    /* background-color: #f00; */
     display: flex;
     padding-left: 30rpx;
     padding-right: 40rpx;
@@ -73,6 +73,12 @@ page {
     margin-bottom: 20rpx;
 }
 
+/* 我的书影音 */
+.title-wrapper .title {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
 /* 登录查看 */
 .title-wrapper .loginlook {
     background-color: #fff;
@@ -81,7 +87,8 @@ page {
     color: #838383;
 }
 
-.title-wrapper .loginlook .arrow {
+/* 我的书影音 所有 箭头> */
+.item-wrapper .arrow {
     width: 20rpx;
     height: 20rpx;
     border: 4rpx solid#7F7F7F;
@@ -96,7 +103,7 @@ page {
     display: flex;
     align-items: center;
     padding-left: 30rpx;
-    padding-right: 40rpx;
+    padding-right: 20rpx;
     margin-top: 20rpx;
 }
 
@@ -106,14 +113,15 @@ page {
     margin-right: 30rpx;
 }
 
+/* 包含 left + right */
 .info-wrapper {
-    background-color: #f00;
+    /* background-color:#EF9800; */
     flex-grow: 1;
     padding-right: 20rpx;
 }  
 
 .info-wrapper .info {
-    background-color: #0f0;
+    /* background-color: #0f0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,30 +129,34 @@ page {
 
 /* 观影分析 */
 .info .left .leftTop {
+    /* background-color: #1abc9c; */
     margin-bottom: 15rpx;
     font-size: 32rpx;
 }
 
 /* 0 看过 */
 .info .left .leftBottom {
-    background-color: #f00;
+    /* background-color: #f00; */
     display: flex;
     color: #818181;
     /* 纵轴对齐方式：底部对齐 */
     align-items: flex-end;
 }
 
+/* 0 */
 .info .leftBottom .count {
     font-size: 50rpx;
     margin-right: 10rpx;
 }
 
+/* 看过 */
 .info .leftBottom .text {
     margin-bottom: 10rpx;
 }
 
+/* 开启10步影音... + 立即开启 */
 .info .right {
-    background: #ff0;
+    /* background: #ff0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,13 +166,14 @@ page {
 
 /* 开启10部影片\n开启观影分析 */
 .info .right .text {
+    /* background: #ff00ff; */
     color: #c1c1c1;
-    margin-right: 5rpx;
+    margin-right: 10rpx;
 }
 
 /* 立即开启 */
-.info .right-wrapper {
-    background-color: #0ff;
+.info .open-wrapper {
+    /* background-color: #0ff; */
     display: flex;
     align-items: center;
 }
@@ -169,8 +182,8 @@ page {
 .info .right .immediatelyOpen {
     color: #4a4a4a;
     /* 上下10rpx 左右 15rpx */
-    padding: 10rpx 15rpx;
     border-radius: 10rpx;
+    padding: 10rpx 15rpx;
     background-color: #F5F5F5;
 }
 
@@ -178,6 +191,6 @@ page {
 .item .divider {
     width: 100%;
     height: 2rpx;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
     margin-top: 15rpx;
 }
