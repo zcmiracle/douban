@@ -3,13 +3,13 @@
 <view class="container">
   <view>
     <!-- 登录button + 背景包装 -->
-    <view class="login-wrap">
+    <view class="login-wrapper">
       <view class="login" bind:tap="login">登录</view>
       <image src="/assets/imgs/bg_mine_login.png" mode="aspectFill"/>
     </view>
 
     <!-- 我的书影音 + 登录查看 > -->  
-    <view class="items-wrapper">
+    <view class="item-wrapper">
       <view class="title-wrapper">
         <view class="title">我的书影音</view>
         <!-- 登录查看 + > -->
@@ -20,20 +20,25 @@
       </view>
 
       <!-- items -->
-      <view class="items">
+      <view class="item">
         <image class="icon" src="/assets/imgs/ic_cat_movie.png"/>
         <view class="info-wrapper">
           <view class="info">
             <!-- 观影分析 + 0 看过 -->
             <view class="left">
-              <view class="leftTop"></view>
-              <view class="leftBottom"></view>
+              <view class="leftTop">观影分析</view>
+              <view class="leftBottom">
+                <view class="count">0</view>
+                <view class="text">看过</view>
+              </view>
             </view>
             <!-- 开启10部影片\n开启观影分析 + 立即开启 + > -->
             <view class="right">
               <text class="text">开启10部影片\n开启观影分析</text> 
-              <view class="immediatelyOpen">立即开启</view>
-              <view class="arrow"></view>
+              <view class="right-wrapper">  
+                <view class="immediatelyOpen">立即开启</view>
+                <view class="arrow"></view>
+              </view>
             </view>
           </view>
           <view class="divider"></view>

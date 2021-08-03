@@ -1,1 +1,183 @@
 /* pages/profile/profile.wxss */
+
+page {
+    height: 100%;  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.login-wrapper {
+    display: flex;
+    height: 400rpx;
+    /* 子绝父相 */
+    position: relative; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/* 背景图 */
+.login-wrapper image {
+    left: 0;
+    top: 0;
+    height: 400rpx;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 设置元素的堆叠顺序，Z-index仅能在定位元素上奏效（例如 position:absolute;）*/
+    z-index: -1;
+}
+
+/* 登录按钮 */
+.login-wrapper .login {
+    color: #1E4826;
+    background-color: #fff;
+    border-radius: 50rpx;
+    font-size: 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 350rpx;
+    text-align: center;
+    /* 设置阴影 */
+    box-shadow: 2rpx 2rpx 10rpx 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 版本1.0.2 */
+.version {
+    color: #C9C9C9;
+    font-size: 24rpx;
+    text-align: center;
+    /* 上下32rpx 左右0 */
+    margin: 32rpx 0;
+}
+
+/* 我的书影音顶部 距离 背景图的间距 */
+.item-wrapper {
+    margin-top: 30rpx;
+}
+
+/* 我的书影音 + 登录查看 */
+.title-wrapper {
+    background-color: #f00;
+    display: flex;
+    padding-left: 30rpx;
+    padding-right: 40rpx;
+    /* 纵轴对齐方式：居中 */
+    align-items: center;
+    /* 主轴对齐方式：两端对齐 */
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+
+/* 登录查看 */
+.title-wrapper .loginlook {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    color: #838383;
+}
+
+.title-wrapper .loginlook .arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border: 4rpx solid#7F7F7F;
+    border-left: none;
+    border-top: none;
+    /* 逆时针旋转45度 */
+    transform: rotate(-45deg);
+    margin-left: 10rpx;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+    padding-right: 40rpx;
+    margin-top: 20rpx;
+}
+
+.item .icon {
+    width: 108rpx;
+    height: 108rpx;
+    margin-right: 30rpx;
+}
+
+.info-wrapper {
+    background-color: #f00;
+    flex-grow: 1;
+    padding-right: 20rpx;
+}  
+
+.info-wrapper .info {
+    background-color: #0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 观影分析 */
+.info .left .leftTop {
+    margin-bottom: 15rpx;
+    font-size: 32rpx;
+}
+
+/* 0 看过 */
+.info .left .leftBottom {
+    background-color: #f00;
+    display: flex;
+    color: #818181;
+    /* 纵轴对齐方式：底部对齐 */
+    align-items: flex-end;
+}
+
+.info .leftBottom .count {
+    font-size: 50rpx;
+    margin-right: 10rpx;
+}
+
+.info .leftBottom .text {
+    margin-bottom: 10rpx;
+}
+
+.info .right {
+    background: #ff0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 50rpx;
+}
+
+/* 开启10部影片\n开启观影分析 */
+.info .right .text {
+    color: #c1c1c1;
+    margin-right: 5rpx;
+}
+
+/* 立即开启 */
+.info .right-wrapper {
+    background-color: #0ff;
+    display: flex;
+    align-items: center;
+}
+
+/* 立即开启 */
+.info .right .immediatelyOpen {
+    color: #4a4a4a;
+    /* 上下10rpx 左右 15rpx */
+    padding: 10rpx 15rpx;
+    border-radius: 10rpx;
+    background-color: #F5F5F5;
+}
+
+/* item 分割线 */
+.item .divider {
+    width: 100%;
+    height: 2rpx;
+    background-color: #000;
+    margin-top: 15rpx;
+}
