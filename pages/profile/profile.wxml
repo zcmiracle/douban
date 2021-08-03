@@ -19,7 +19,7 @@
         </view>
       </view>
 
-      <!-- items -->
+      <!-- item -->
       <view class="item">
         <image class="icon" src="/assets/imgs/ic_cat_movie.png"/>
         <view class="info-wrapper">
@@ -45,6 +45,58 @@
         </view>
       </view>
 
+      <!-- item -->
+      <view class="item">
+        <image class="icon" src="/assets/imgs/ic_cat_book.png"/>
+        <view class="info-wrapper">
+          <view class="info">
+            <!-- 观影分析 + 0 看过 -->
+            <view class="left">
+              <view class="leftTop">读书分析</view>
+              <view class="leftBottom">
+                <view class="count">0</view>
+                <view class="text">读过</view>
+              </view>
+            </view>
+            <!-- 开启10本书\n开启读书分析 + 立即开启 + > -->
+            <view class="right">
+              <text class="text">开启10本书\n开启读书分析</text> 
+              <view class="open-wrapper">  
+                <view class="immediatelyOpen">立即开启</view>
+                <view class="arrow"></view>
+              </view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>
+
+      <!-- item -->
+      <view class="item">
+        <image class="icon" src="/assets/imgs/ic_cat_music.png"/>
+        <view class="info-wrapper">
+          <view class="info">
+            <!-- 音乐分析 + 0 听过 -->
+            <view class="left">
+              <view class="leftTop">音乐分析</view>
+              <view class="leftBottom">
+                <view class="count">0</view>
+                <view class="text">听过</view>
+              </view>
+            </view>
+            <!-- 标记10张唱片\n开启音乐分析 + 立即开启 + > > -->
+            <view class="right">
+              <text class="text">标记10张唱片\n开启音乐分析</text> 
+              <view class="open-wrapper">  
+                <view class="immediatelyOpen">立即开启</view>
+                <view class="arrow"></view>
+              </view>
+            </view>
+          </view>
+          <view class="divider"></view>
+        </view>
+      </view>   
+      
       <!-- 版本1.0.2 -->
       <view class="version">版本1.0.2</view>
   
